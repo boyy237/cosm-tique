@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Produits Cosmétiques Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hambg.css">
+
+</head>
+<body>
+
+    <!-- ===== MENU MOBILE OVERLAY  pour android===== -->
+    <div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true" aria-label="Menu principal">
+        <div class="menu-backdrop" id="menuBackdrop"></div>
+        <nav class="menu-drawer" id="menuDrawer">
+
+            <!-- En-tête -->
+            <div class="menu-drawer-header">
+                <div class="menu-drawer-logo">
+                    <span class="sparkle">✨</span>BeautyGlow
+                </div>
+                <button class="menu-close-btn" id="menuCloseBtn" aria-label="Fermer le menu">✕</button>
+            </div>
+
+            <!-- Navigation principale -->
+            <div class="menu-nav-section">
+                <h5>Navigation</h5>
+                <ul class="menu-nav-links">
+                    <li><a href="#accueil" class="active"><span class="nav-icon">🏠</span> Accueil</a></li>
+                    <li><a href="#produits"><span class="nav-icon">🛍️</span> Produits</a></li>
+                    <li><a href="#marques"><span class="nav-icon">⭐</span> Marques</a></li>
+                    <li><a href="#contact"><span class="nav-icon">📬</span> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-divider"></div>
+
+            <!-- Catégories -->
+            <div class="menu-categories-section">
+                <h5>Nos Catégories</h5>
+                <div class="menu-cat-cards">
+                    <a href="maquillage.html" class="menu-cat-card">
+                        <div class="cat-icon">💄</div>
+                        <div class="cat-info">
+                            <h4>Maquillage</h4>
+                            <p>Rouge à lèvres, fond de teint…</p>
+                        </div>
+                        <span class="cat-arrow">›</span>
+                    </a>
+                    <a href="soin_visages.html" class="menu-cat-card">
+                        <div class="cat-icon">🧴</div>
+                        <div class="cat-info">
+                            <h4>Soins Visage</h4>
+                            <p>Crèmes, sérums, nettoyants…</p>
+                        </div>
+                        <span class="cat-arrow">›</span>
+                    </a>
+                    <a href="produit_cheveux.html" class="menu-cat-card">
+                        <div class="cat-icon">💆‍♀️</div>
+                        <div class="cat-info">
+                            <h4>Cheveux</h4>
+                            <p>Shampoing, masques, soins…</p>
+                        </div>
+                        <span class="cat-arrow">›</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-divider"></div>
+
+            <!-- Panier -->
+            <button class="menu-cart-btn">
+                🛒 Mon Panier <span style="background:rgba(255,255,255,0.25);padding:2px 9px;border-radius:10px;font-size:0.85rem;">0</span>
+            </button>
+
+            <div class="menu-divider"></div>
+
+            <!-- Contact -->
+            <div class="menu-contact-section">
+                <h5>Nous Contacter</h5>
+                <div class="menu-contact-items">
+                    <div class="menu-contact-item">
+                        <div class="contact-icon">📍</div>
+                        <span>Marché B, Yaoundé II</span>
+                    </div>
+                    <div class="menu-contact-item">
+                        <div class="contact-icon">📞</div>
+                        <span>+237 673 533 949</span>
+                    </div>
+                    <div class="menu-contact-item">
+                        <div class="contact-icon">📧</div>
+                        <span>contact@beautyglow.cm</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Réseaux sociaux -->
+            <div class="menu-social-section">
+                <h5>Suivez-Nous</h5>
+                <div class="menu-social-links">
+                    <a href="#">📘 Facebook</a>
+                    <a href="#">📸 Instagram</a>
+                    <a href="#">🐦 Twitter</a>
+                    <a href="#">💬 WhatsApp</a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <!-- ===== FIN MENU MOBILE OVERLAY ===== -->
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div> <span class="log">✨ </span>  <span class="logo">BeautyGlow </span> </div>
+            <button class="nav-mobile" id="nav-toggle" aria-label="Menu">&#9776;</button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#marques">Marques</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <a href="Broo.html" > ico</a>
+            </ul>
+            <div class="cart-icon">
+                <button class="cart-btn">🛒 Panier <span class="cart-count">0</span></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Beauté Naturelle & Résultats Exceptionnels</h1> <br><br>
+            <a href="maquillage.html" class="btn btn-hero"> maquillage</a>
+            <a href="produit_cheveux.html" class="btn btn-hero"> soins_cheveux</a>
+            <a href="soin_visages.html" class="btn btn-hero"> soins_visage</a>
+        </div>
+    </section>
+
+    <!-- Catégories -->
+    <section class="categories">
+        <div class="container">
+            <h2>Nos Catégories de produits</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">💄</div>
+                    <h3>Maquillage</h3>
+                    <p>Rouge à lèvres, fond de teint, <br>fard à paupières</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🧴</div>
+                    <h3>Soins Peau</h3>
+                    <p>Crèmes, sérums, nettoyants</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💆‍♀️</div>
+                    <h3>Cheveux</h3>
+                    <p>Shampoing, après-shampooing, <br>masque</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produits -->
+    <section id="produits" class="products">
+        <div class="container">
+            <h2>Nos Produits Vedettes</h2>
+            <!-- Filtres -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="maquillage">Maquillage</button>
+                <button class="filter-btn" data-filter="soins">Soins</button>
+                <button class="filter-btn" data-filter="cheveux">Cheveux</button>
+            </div>
+
+            <!-- Produit 1 -->
+            <div class="products-grid">
+                <div class="product-card" data-category="maquillage">
+                    <div class="product-image">
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fond de Teint Lumineux</h3>
+                        <p class="brand">BeautyGlow Pro</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (245)</div>
+                        <div class="price">
+                            <span class="original">10,5€</span>
+                            <span class="sale">8€</span>
+                        </div>
+                        <button class="btn btn-add">Ajouter au Panier</button>
+                    </div>
+                     <a href="maquillage.html" class="btn btn-add-plus">+</a>
+                </div>
+
+                <!-- Produit 2 -->
+                <div class="product-card" data-category="maquillage">
+                    <div class="product-image">
+                        <span class="discount-badge">-15%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rouge à Lèvres Velours</h3>
+                        <p class="brand">Luxury Colors</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (189)</div>
+                        <div class="price">
+                            <span class="original">11,99€</span>
+                            <span class="sale">9,5€</span>
+                        </div>
+                        <button class="btn btn-add">Ajouter au Panier</button>
+                    </div>
+                     <a href="maquillage.html" class="btn btn-add-plus"> +</a>
+                </div>
+
+                <!--Produit-->
+                 <div class="product-card" data-category="maquillage">
+                    <div class="product-image">
+                        <span class="discount-badge">-15%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rouge à Lèvres brillant</h3>
+                        <p class="brand">Luxury </p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (200)</div>
+                        <div class="price">
+                            <span class="original">11€</span>
+                            <span class="sale">9€</span>
+                        </div>
+                        <button class="btn btn-add">Ajouter au Panier</button>
+                    </div>
+                     <a href="maquillage.html" class="btn btn-add-plus"> +</a>
+                </div>
+
+                <!-- Produit 3 -->
+                <div class="product-card" data-category="soins">
+                    <div class="product-image">
+                        <span class="new-badge">NOUVEAU</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sérum Hydratant Premium</h3>
+                        <p class="brand">SkinCare Elite</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (156)</div>
+                        <div class="price">
+                            <span class="sale">14€</span>
+                        </div>
+                        <button class="btn btn-add">Ajouter au Panier</button>
+                    </div>
+                    <a href="soin_visages.html" class="btn btn-add-plus"> +</a>
+                </div>
+
+                <!-- Produit 4 -->
+                <div class="product-card" data-category="soins">
+                    <div class="product-image">
+                        <span class="discount-badge">-25%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Crème Anti-Âge Intensive</h3>
+                        <p class="brand">Age Defense</p>
+                        <div class="rating">⭐⭐⭐⭐ (312)</div>
+                        <div class="price">
+                            <span class="original">9€</span>
+                            <span class="sale">5€</span>
+                        </div>
+                        <button class="btn btn-add">Ajouter au Panier</button>
+                    </div>
+                  <a href="soin_visages.html" class="btn btn-add-plus"> +</a>
+                </div>
+
+                <!--Produit-->
+                <div class="product-card" data-category="soins">
+                    <div class="product-image">
+                        <span class="discount-badge">-15%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Crème Anti-Âge Intensive</h3>
+                        <p class="brand">creme forte</p>
+                        <div class="rating">⭐⭐⭐⭐ (352)</div>
+                        <div class="price">
+                            <span class="original">9€</span>
+                            <span class="sale">7€</span>
+                        </div>
+                        <button class="btn btn-add">Ajouter au Panier</button>
+                    </div>
+                  <a href="soin_visages.html" class="btn btn-add-plus"> +</a>
+                </div>
+
+                <!-- Produit 5 -->
+                <div class="product-card" data-category="cheveux">
+                    <div class="product-image">
+                        <span class="discount-badge">-10%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Shampoing Nourrissant</h3>
+                        <p class="brand">HairLux</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (423)</div>
+                        <div class="price">
+                            <span class="original">10€</span>
+                            <span class="sale">7€</span>
+                        </div>
+                        <button class="btn btn-add">Ajouter au Panier</button>
+                    </div>
+                    <a href="produit_cheveux.html" class="btn btn-add-plus">+</a>
+                </div>
+
+                <!-- Produit 6 -->
+                <div class="product-card" data-category="cheveux">
+                    <div class="product-image">
+                        <span class="new-badge">NOUVEAU</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Masque Cheveux Réparant</h3>
+                        <p class="brand">HairLux</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (178)</div>
+                        <div class="price">
+                            <span class="sale">20€</span>
+                        </div>
+                        <button class="btn btn-add">Ajouter au Panier</button>
+                    </div>
+                   <a href="produit_cheveux.html" class="btn btn-add-plus">+</a>
+                </div>
+                
+                <!--produit-->
+                 <div class="product-card" data-category="cheveux">
+                    <div class="product-image">
+                        <span class="new-badge">NOUVEAU</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Masque Cheveux </h3>
+                        <p class="brand">brille</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (158)</div>
+                        <div class="price">
+                            <span class="sale">10€</span>
+                        </div>
+                        <button class="btn btn-add">Ajouter au Panier</button>
+                    </div>
+                   <a href="produit_cheveux.html" class="btn btn-add-plus">+</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marques Partenaires -->
+    <section id="marques" class="brands">
+        <div class="container">
+            <h2>Nos Marques Partenaires</h2>
+            <marquee>
+            <div class="brands-grid">
+                <div class="brand-logo">landry</div>
+                <div class="brand-logo">landry</div>
+                <div class="brand-logo">landry</div>
+                <div class="brand-logo">landry</div>
+                <div class="brand-logo">landry</div>
+                <div class="brand-logo">landry</div>
+            </div>
+        </marquee>
+        </div>
+    </section>
+
+    <!-- Avantages -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚚</div>
+                    <h3>Livraison Gratuite</h3>
+                    <p>Pour toute commande supérieure à 50€</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔒</div>
+                    <h3>Paiement Sécurisé</h3>
+                    <p>Vos transactions sont protégées et securiser a 💯</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">↩️</div>
+                    <h3>Anullation</h3>
+                    <p>15 jours pour changer d'avis</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💬</div>
+                    <h3>echanges avec Client</h3>
+                    <p>Disponible 24h/24, 7j/7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Recevez nos Offres Exclusives</h2>
+            <p>Inscrivez-vous à notre newsletter pour des réductions jusqu'à 10% 🎁</p>
+            <form class="newsletter-form">
+                <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+                <button type="submit" class="btn btn-primary">S'inscrire</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-Nous</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>📍 Adresse</h3>
+                        <p>marche B , yaounde II </p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📞 Téléphone</h3>
+                        <p>+237 673533949</p> <br>
+                        <p>+237 696748600</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📧 Email</h3>
+                        <p>contact@beautyglow.cm</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    <input type="email" id="email2" placeholder="Votre email" required>
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>À Propos</h4>
+                    <ul>
+                        <li><a href="#">Qui sommes-nous</a></li>
+                        <li><a href="#">Notre Histoire</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Client 🎯</h4>
+                    <ul>
+                        <li><a href="#">ventes</a></li>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">réservés</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Conditions</a></li>
+                        <li><a href="#">Politique de Confidentialité</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-Nous</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BeautyGlow. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <button  class="backToTop" id="backToTop" title="Retour en haut">↑</button>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
