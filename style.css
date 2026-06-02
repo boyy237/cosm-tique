@@ -1,13 +1,13 @@
 /* Variables */
 :root {
-    --primary-color: blue;
-    --secondary-color: #ec4899;
-    --dark-bg: #0f172a;
+    --primary-color: rgba(199, 210, 127, 0.99);
+    --secondary-color: #a0242492;
+    --dark-bg: #0e1013;
     --light-bg: #f0f5ed41;
     --text-dark: #1e293b;
     --text-light: #f1f5f9;
     --border-color: #01060ebd;
-    --success-color: #10b981;
+    --success-color: #0ab93e;
     --border-radius: 8px;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -43,10 +43,13 @@ body {
 
 body{
     background: url("phot/fond13.jpg");
-  
-
 }
 
+.back{
+    color: var(--secondary-color);
+    font-size: 30px;
+    display: none;
+}
 .container-maqui {
     margin: 20px;
     padding: 50px;
@@ -57,7 +60,7 @@ body{
     text-align: center;
     margin-bottom: 25px;
     font-size: 30px;
-    color: #0aa4d3;
+    color: var(--secondary-color);
 
 }
 
@@ -65,7 +68,7 @@ body{
     width: 330px;
     text-align: center;
     margin-bottom: 20px;
-    color: #0aa4d3;
+    color: var(--text-light);
 }
 
 /* Navigation */
@@ -121,7 +124,7 @@ nav input[type = checkbox]:checked ~  ul  {
 }
 
 .nav-links a:hover , .active {
-    color: rgb(6, 184, 207);
+    color: var(--secondary-color);
 }
 
 
@@ -205,18 +208,16 @@ nav input[type = checkbox]:checked ~  ul  {
 }
 
 .btn-add {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     width: 100%;
     margin-top: 1rem; 
 }
 
 .btn-add-plus{
-    background-color: var(--secondary-color);
+    background-color: var(--text-dark);
+    color: #0ab93e;
     transform: translate(5px);
-}
-.btn-add-plus:hover{
-    background-color: var(--secondary-color);
 }
 
 
@@ -478,7 +479,7 @@ nav input[type = checkbox]:checked ~  ul  {
 /* Avantages */
 .benefits {
     padding: 80px 20px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+     background:#000 ;
     color: white;
 }
 
@@ -514,9 +515,10 @@ nav input[type = checkbox]:checked ~  ul  {
 }
 
 .newsletter h2 {
+    color: #ffffffa3;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--text-dark);
+    
 }
 
 .newsletter p {
@@ -553,10 +555,10 @@ nav input[type = checkbox]:checked ~  ul  {
 /* Contact */
 .contact {
     padding: 80px 20px;
-    background-color: rgb(112, 7, 153);
 }
 
 .contact h2 {
+    color: #fff;
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -605,6 +607,40 @@ nav input[type = checkbox]:checked ~  ul  {
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--primary-color);
+}
+
+.wa-btn {
+    display: inline-flex;
+    margin-top: 50px;
+    align-items: center;
+    gap: 12px;
+    background: #25D366;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    width: 230px;
+    padding: 14px 28px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.wa-btn:hover {
+    background: #1ebe5d;
+    transform: scale(1.03);
+}
+
+.wa-btn:active {
+    transform: scale(0.97);
+}
+
+.wa-icon {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    flex-shrink: 0;
 }
 
 /* Footer */
@@ -659,6 +695,9 @@ nav input[type = checkbox]:checked ~  ul  {
 /* Responsive */
 @media screen and (max-width: 736px) {
 
+    .back{
+        display: block;
+    }
     .log {
         font-size: 2rem;
     }

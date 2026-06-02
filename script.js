@@ -1,4 +1,4 @@
-// Panier
+﻿// Panier
  cart = []
 // Ajouter au panier
 document.querySelectorAll('.btn-add').forEach(button => {
@@ -33,7 +33,7 @@ function showNotification(message) {
         position: fixed;
         top: 100px;
         right: 20px;
-        background: linear-gradient(135deg, #d946a6, #ec4899);
+        background: linear-gradient(135deg, #2b1201, #15080f);
         color: white;
         padding: 15px 20px;
         border-radius: 8px;
@@ -80,19 +80,25 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 });
 
 // Formulaire Newsletter
-document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const email = this.querySelector('input[type="email"]').value;
-    showNotification(`Merci! Un email de confirmation a été envoyé à ${email}`);
-    this.reset();
-});
+const newsletterForm = document.querySelector('.newsletter-form');
+if (newsletterForm) {
+    newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.querySelector('input[type="email"]').value;
+        showNotification(`Merci! Un email de confirmation a été envoyé à ${email}`);
+        this.reset();
+    });
+}
 
 // Formulaire Contact
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    showNotification('Votre message a été envoyé avec succès!');
-    this.reset();
-});
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        showNotification('Votre message a été envoyé avec succès!');
+        this.reset();
+    });
+}
 
 // Bouton Panier
 document.querySelector('.cart-btn').addEventListener('click', function() {
